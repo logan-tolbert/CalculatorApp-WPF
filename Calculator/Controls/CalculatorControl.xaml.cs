@@ -27,7 +27,7 @@ namespace Calculator.Controls
 
         private void acButton_Click(object sender, RoutedEventArgs e)
         {
-
+            resultsTextBlock.Text = "0";
         }
 
         private void positiveOrNegativeButton_Click(object sender, RoutedEventArgs e)
