@@ -47,17 +47,43 @@ namespace Calculator.Controls
 
         private void sevenButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (resultsTextBlock.Text == "0")
+            {
+                resultsTextBlock.Text = string.Empty;
+                resultsTextBlock.Text += "7"; 
+            }
+            else
+            {
+                resultsTextBlock.Text += "7";
+            }
+            
         }
 
         private void eightButton_Click(object sender, RoutedEventArgs e)
         {
+            if (resultsTextBlock.Text == "0")
+            {
+                resultsTextBlock.Text = string.Empty;
+                resultsTextBlock.Text += "8";
+            }
+            else
+            {
+                resultsTextBlock.Text += "8";
+            }
 
         }
 
         private void nineButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (resultsTextBlock.Text == "0")
+            {
+                resultsTextBlock.Text = string.Empty;
+                resultsTextBlock.Text += "9";
+            }
+            else
+            {
+                resultsTextBlock.Text += "9";
+            }
         }
 
         private void multipliyButton_Click(object sender, RoutedEventArgs e)
@@ -67,17 +93,41 @@ namespace Calculator.Controls
 
         private void fourButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (resultsTextBlock.Text == "0")
+            {
+                resultsTextBlock.Text = string.Empty;
+                resultsTextBlock.Text += "4";
+            }
+            else
+            {
+                resultsTextBlock.Text += "4";
+            }
         }
 
         private void fiveButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (resultsTextBlock.Text == "0")
+            {
+                resultsTextBlock.Text = string.Empty;
+                resultsTextBlock.Text += "5";
+            }
+            else
+            {
+                resultsTextBlock.Text += "5";
+            }
         }
 
         private void sixButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (resultsTextBlock.Text == "0")
+            {
+                resultsTextBlock.Text = string.Empty;
+                resultsTextBlock.Text += "6";
+            }
+            else
+            {
+                resultsTextBlock.Text += "6";
+            }
         }
 
         private void addButton_Click(object sender, RoutedEventArgs e)
@@ -87,17 +137,41 @@ namespace Calculator.Controls
 
         private void oneButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (resultsTextBlock.Text == "0")
+            {
+                resultsTextBlock.Text = string.Empty;
+                resultsTextBlock.Text += "1";
+            }
+            else
+            {
+                resultsTextBlock.Text += "1";
+            }
         }
 
         private void twoButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (resultsTextBlock.Text == "0")
+            {
+                resultsTextBlock.Text = string.Empty;
+                resultsTextBlock.Text += "2";
+            }
+            else
+            {
+                resultsTextBlock.Text += "2";
+            }
         }
 
         private void threeButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (resultsTextBlock.Text == "0")
+            {
+                resultsTextBlock.Text = string.Empty;
+                resultsTextBlock.Text += "3";
+            }
+            else
+            {
+                resultsTextBlock.Text += "3";
+            }
         }
 
         private void subtractButton_Click(object sender, RoutedEventArgs e)
@@ -107,12 +181,34 @@ namespace Calculator.Controls
 
         private void zeroButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (resultsTextBlock.Text == "0")
+            {
+                resultsTextBlock.Text = string.Empty;
+                resultsTextBlock.Text += "0";
+            }
+            else
+            {
+                resultsTextBlock.Text += "0";
+            }
         }
 
         private void decimalButton_Click(object sender, RoutedEventArgs e)
         {
+            if (resultsTextBlock.Text == "0")
+            {
+                resultsTextBlock.Text = "0";
+                resultsTextBlock.Text += ".";
+            }
+            else if (resultsTextBlock.Text.Contains("."))
+            {
 
+                MessageBox.Show("**** Numbers cannot have more than one decimal place you silly goose! ****");
+                resultsTextBlock.Text = "0";
+            }
+            else
+            {
+                resultsTextBlock.Text += ".";
+            }
         }
 
         private void equalbutton_Click(object sender, RoutedEventArgs e)
